@@ -3,44 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Page</title>
+    <title>My DevOps Page</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
             color: white;
-            padding: 15px;
-            text-align: center;
         }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
         nav {
-            background-color: #555;
+            display: flex;
+            justify-content: center;
+            background: rgba(0,0,0,0.3);
             padding: 10px;
-            text-align: center;
         }
+
         nav a {
             color: white;
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #ffd700;
         }
+
         .container {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px;
+            padding: 50px 20px;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #ff9800;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e68900;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.5);
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -48,30 +84,31 @@
 <body>
 
 <header>
-    <h1>Welcome to My Website</h1>
-    <p>Learning HTML step by step</p>
+    <h1>🚀 Welcome to My DevOps Journey</h1>
+    <p>Learning Git | Linux | Kubernetes</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
+    <a href="#">Projects</a>
     <a href="#">Contact</a>
 </nav>
 
 <div class="container">
-    <h2>Home Section</h2>
-    <p>This is a simple HTML page example.</p>
-
-    <button onclick="showMessage()">Click Me</button>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am learning DevOps step by step and building real projects.</p>
+        <button onclick="showMessage()">Click Me</button>
+    </div>
 </div>
 
 <footer>
-    <p>© 2026 My Website</p>
+    <p>© 2026 Yogesh | DevOps Learner</p>
 </footer>
 
 <script>
     function showMessage() {
-        alert("Hello! You clicked the button.");
+        alert("Keep learning DevOps 🚀");
     }
 </script>
 
